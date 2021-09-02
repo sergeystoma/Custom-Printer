@@ -35,7 +35,7 @@ const Printer = function init(printer, port) {
 Printer.prototype.write = function write(data) {
     console.log('SENDING: ', data)
     if(this.port != null) {
-        port.write(data)
+        this.port.write(data)
     }
 }
 
